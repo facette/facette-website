@@ -1,0 +1,22 @@
+.menu,
+.menu a {
+	display: flex;
+}
+
+.menu {
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+.menuitem a {
+	align-items: center;
+	border-radius: 0.25rem;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	transition: background-color .2s ease-in-out;
+}
+
+.menuitem a .fa {
+	font-size: 1.5rem;
+	margin-right: 0.75rem;
+}

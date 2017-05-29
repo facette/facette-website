@@ -1,0 +1,47 @@
+footer {
+	background-color: #f2f2f2;
+	color: #444;
+	display: flex;
+}
+
+footer a:hover {
+	color: #222;
+}
+
+footer .menu {
+	margin: 0 auto;
+}
+
+footer .link,
+footer .menu {
+	display: flex;
+}
+
+footer .link {
+	margin: 0 auto;
+	padding: 1.5rem 0;
+}
+
+footer .menu.main {
+	flex-direction: column;
+	font-size: 0.9rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+}
+
+footer .menu.main a:hover {
+	text-decoration: underline;
+}
+
+footer .menu.connect {
+	align-items: flex-end;
+	flex: 1;
+}
+
+footer .menu.connect .menuitem a {
+	padding: 0 0.75rem;
+}
+
+footer .menu.connect .menuitem a .fa {
+	margin: 0;
+}

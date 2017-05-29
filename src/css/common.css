@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background-color: #fff;
+	color: #222;
+	line-height: 1.5rem;
+}
+
+:disabled {
+	pointer-events: none;
+}
+
+a {
+	color: inherit;
+}
+
+a:focus {
+	outline: none;
+}
+
+body > header .main,
+body > header .screenshot,
+article header,
+article section .screenshot,
+footer .link {
+	width: 1024px;
+}
+
+@media (max-width: 1024px) {
+	body > header .main,
+	body > header .screenshot,
+	article header,
+	article section .screenshot,
+	footer .link {
+		width: calc(100% - 7rem);
+	}
+}
+
+@media (max-width: 640px) {
+	html {
+		font-size: 0.9rem;
+	}
+}

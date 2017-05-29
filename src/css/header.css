@@ -1,0 +1,90 @@
+body > header,
+body > header .main,
+body > header .screenshot {
+	display: flex;
+}
+
+body > header {
+	align-items: center;
+	background: #222 url(../images/background.png) repeat-x;
+	background-position: bottom left;
+	background-size: auto 500px;
+	box-sizing: border-box;
+	color: #fff;
+	flex-direction: column;
+	height: 65%;
+	max-height: 544px;
+	overflow: hidden;
+	padding-top: 3.5rem;
+	position: relative;
+}
+
+body > header::before,
+body > header::after {
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+body > header::before {
+	background-color: rgba(0, 0, 0, 0.25);
+	bottom: 0.35rem;
+	height: 0.175rem;
+}
+
+body > header::after {
+	background: url(../images/ribbon.svg) 0 0 / 100% no-repeat;
+	bottom: 0;
+	height: 0.35rem;
+}
+
+body > header .main {
+	align-items: center;
+	padding-bottom: 3.5rem;
+}
+
+body > header .logo img {
+	height: 64px;
+	vertical-align: middle;
+}
+
+body > header .menu,
+body > header .screenshot {
+	flex: 1;
+}
+
+body > header .menu {
+	line-height: 3.5rem;
+}
+
+body > header .menuitem a:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+body > header .screenshot {
+	background-color: rgba(0, 0, 0, 0.35);
+	border-radius: 0.4rem;
+	justify-content: center;
+	padding: 1rem;
+}
+
+body > header .screenshot img {
+	cursor: zoom-in;
+}
+
+@media (max-width: 640px) {
+	body > header {
+		background-size: auto 330px;
+		height: auto;
+	}
+
+	body > header .logo img {
+		height: 48px;
+	}
+
+	body > header .screenshot {
+		display: none;
+	}
+}

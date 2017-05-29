@@ -1,0 +1,98 @@
+article header {
+	display: flex;
+}
+
+article header {
+	line-height: 3.5rem;
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+article header h1 {
+	color: #444;
+	flex: 1;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+article header .menuitem {
+	color: #fff;
+}
+
+article header .menuitem a {
+	border-bottom: 0.2rem solid rgba(0, 0, 0, 0.125);
+}
+
+article header .menuitem a:active {
+	border-bottom-color: transparent;
+	line-height: 3.3rem;
+	transform: translateY(0.2rem);
+}
+
+article header .menuitem.demo a {
+	background-color: #08a;
+}
+
+article header .menuitem.demo a:hover {
+	background-color: #0091b5;
+}
+
+article header .menuitem.download a {
+	background-color: #aad400;
+}
+
+article header .menuitem.download a:hover {
+	background-color: #b7e000;
+}
+
+article header .menuitem + .menuitem {
+	margin-left: 1.5rem;
+}
+
+article section {
+	border-top: 0.175rem solid #f2f2f2;
+}
+
+article section .screenshot {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 3.5rem 0;
+}
+
+article section .screenshot img {
+	border: 0.5rem solid #f2f2f2;
+	border-radius: 0.25rem;
+	cursor: zoom-in;
+	margin: 0 1rem;
+	transition: transform .2s ease-in-out;
+	width: 224px;
+}
+
+article section .screenshot img:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 876px) {
+	article header {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	article header h1 {
+		margin-bottom: 1rem;
+	}
+
+	article header .menu {
+		justify-content: center;
+	}
+
+	article section .screenshot {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	article section .screenshot img {
+		margin: 1rem 0;
+	}
+}
