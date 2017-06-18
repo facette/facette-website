@@ -29,11 +29,11 @@ article header .menuitem a:active {
 	transform: translateY(0.2rem);
 }
 
-article header .menuitem.demo a {
+article header .menuitem.play a {
 	background-color: #08a;
 }
 
-article header .menuitem.demo a:hover {
+article header .menuitem.play a:hover {
 	background-color: #0091b5;
 }
 
