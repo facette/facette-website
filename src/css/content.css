@@ -64,6 +64,7 @@ article section .screenshot img {
 	border: 0.5rem solid #f2f2f2;
 	border-radius: 0.25rem;
 	cursor: zoom-in;
+	height: 168px;
 	margin: 0 1rem;
 	transition: transform .2s ease-in-out;
 	width: 224px;

@@ -72,6 +72,9 @@ body > header .screenshot {
 
 body > header .screenshot img {
 	cursor: zoom-in;
+	object-fit: cover;
+	object-position: top;
+	width: 100%;
 }
 
 @media (max-width: 640px) {
