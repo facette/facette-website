@@ -10,6 +10,26 @@ GULP_ARGS =
 
 GIT ?= git
 
+GO_IMPORTS = facette \
+             facette/backend \
+             facette/catalog \
+             facette/cmd/facette \
+             facette/cmd/facettectl \
+             facette/connector \
+             facette/pattern \
+             facette/series \
+             facette/template \
+             facette/timerange \
+             facette/worker \
+             httproute \
+             httputil \
+             jsonutil \
+             logger \
+             maputil \
+             natsort \
+             sliceutil \
+             sqlstorage
+
 all: build
 
 clean:
@@ -20,6 +40,10 @@ clean-all: clean
 
 build: node_modules
 	$(GULP) $(GULP_ARGS) build --env $(BUILD_ENV)
+	for import in $(GO_IMPORTS); do \
+		install -m 0755 -d public/$$import && \
+		sed -e "s|%PATH%|$${import%%/*}|g" src/html/import.html >public/$$import/index.html; \
+        done
 
 release: clean
 	$(GIT) stash save before-gh-pages
